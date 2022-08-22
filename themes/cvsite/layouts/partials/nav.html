@@ -12,7 +12,7 @@
         </a>
         <ul id="nav-menu">
             {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}"{{ if not (hasPrefix .URL "/") }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a></li>
+                <li><a href="{{ .URL }}"{{ if not (hasPrefix .URL "/") }} {{ end }}>{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </nav>

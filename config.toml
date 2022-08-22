@@ -1,20 +1,16 @@
 baseURL = 'https://ofekshabat.github.io/'
 languageCode = 'en-us'
 title = 'Ofek Bendit Shabat'
+enableEmoji = true
 theme = "cvsite"
 [menu]
   [[menu.main]]
-    name = "Home"
+    name = "Heyy 👋"
     pre = "home"
-    url = "/"
+    url = "#welcome"
     weight = 1
   [[menu.main]]
-    name = "Posts"
+    name = "About 💭"
     pre = "pen-tool"
-    url = "/posts/"
+    url = "#about"
     weight = 2
-  [[menu.main]]
-    name = "Tags"
-    pre = "tag"
-    url = "/tags/"
-    weight = 3
