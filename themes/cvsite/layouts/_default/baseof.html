@@ -32,5 +32,5 @@
   <script>document.getElementsByTagName("html")[0].classList.remove("no-js")</script>
   <script src="{{ "js/main.js" | relURL }}"></script>
   {{ with .Params.custom_js }}<script src="{{ printf "js/%s" . | relURL }}"></script>{{ end }}
-  {{ if hugo.IsProduction }}{{ partial "ga.html" . }}{{ end }}
+  {{/*  {{ if hugo.IsProduction }}{{ partial "ga.html" . }}{{ end }}  */}}
 </html>
