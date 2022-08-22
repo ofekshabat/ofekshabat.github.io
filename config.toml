@@ -1,4 +1,4 @@
-baseURL = 'https://bendit.github.io/'
+baseURL = 'https://ofekshabat.github.io/'
 languageCode = 'en-us'
 title = 'Ofek Bendit Shabat'
 theme = "cvsite"
