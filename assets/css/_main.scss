@@ -72,15 +72,11 @@ html {
 /* Containers */
 
 body {
-  background-color: white;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--tw-color-gray-1100);
-    color: var(--tw-color-gray-faint);
-  }
+  background-color: var(--tw-color-gray-1100);
+  color: var(--tw-color-gray-faint);
 }
 
 body.is-preload *,
@@ -112,12 +108,8 @@ main {
 nav,
 .header,
 .footer {
-  background-color: var(--tw-color-blue-primary);
   color: white;
-
-  @media (prefers-color-scheme: dark) {
-    background-color: black;
-  }
+  background-color: black;
 
   a:not(.Button) {
     color: white;
@@ -126,11 +118,7 @@ nav,
     &:hover,
     &:active {
       text-decoration: none;
-      color: var(--tw-color-blue-faded);
-
-      @media (prefers-color-scheme: dark) {
-        color: var(--tw-color-gray-light);
-      }
+      color: var(--tw-color-gray-light);
     }
   }
 }

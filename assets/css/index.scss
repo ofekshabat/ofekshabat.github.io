@@ -5,12 +5,8 @@
 }
 
 .grey {
-  background-color: var(--tw-color-gray-faint);
-
-  @media (prefers-color-scheme: dark) {
-    background-color: var(--tw-color-gray-1100);
-    color: white;
-  }
+  background-color: var(--tw-color-gray-1100);
+  color: white;
 }
 
 .small-container {
