@@ -361,8 +361,8 @@ section#follow {
 .section-title {
   display: none;
   // font-size: var(--font-size-xxjumbo);
-  // line-height: var(--line-height-xxjumbo);
-  font-size: var(--feather-font-size-jumbo);
+  line-height: var(--line-height-xxjumbo);
+  font-size: var(--font-size-mini-jumbo);
   font-weight: var(--feather-font-weight-bold);
 
   @media (prefers-reduced-motion: no-preference) {
