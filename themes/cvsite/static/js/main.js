@@ -26,18 +26,14 @@ if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
         }
       });
     }, config);
-    document.querySelectorAll('.YIR-wrapper svg').forEach(image => {
+    document.querySelectorAll('.wrapper svg').forEach(image => {
       image.classList.remove('in-view');
       observer.observe(image);
     });
   
-    // hide inline headings
-    for (element of document.getElementsByClassName("inline-heading")) {
-      element.classList.add("hide")
-    }
   
     // show active section heading in nav menu
-    const navEntries = document.querySelectorAll('.nav > li')
+    const navEntries = document.querySelectorAll('.menu > li')
     observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -51,13 +47,9 @@ if (window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
         }
       })
     }, {rootMargin: "-50% 0px"})
+
     document.querySelectorAll('section').forEach(e => {
       observer.observe(e);
-  
-      // copy section description to main nav
-      if (description = e.querySelector('.section-description')) {
-        document.querySelector(`.nav a[href="#${e.id}"]`).appendChild(description.cloneNode(true))
-      }
     })
   
     // polyfill smooth scrolling if needed

@@ -1,0 +1,115 @@
+.wrapper {
+  color: white;
+  min-height: 100vh;
+  position: relative;
+}
+
+.menu-container {
+  max-width: var(--YIR-page-width);
+  margin: 0 auto;
+}
+
+.menu-wrapper {
+  position: fixed;
+  height: 100%;
+  padding: var(--feather-grid-large);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.menu-title {
+  font-size: var(--feather-font-size-jumbo);
+  font-weight: var(--feather-font-weight-bold);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: all 0.15s ease-out;
+  }
+}
+
+.menu {
+  margin: 0;
+  margin-left: var(--feather-grid-large);
+
+  a {
+    display: block;
+    padding: 0;
+    color: white;
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: all 0.15s ease-out;
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      @media (prefers-reduced-motion: no-preference) {
+        padding-left: 1em;
+      }
+    }
+
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    margin-bottom: var(--feather-grid-medium);
+
+    .section-description {
+      width: var(--timeline-active-text-width);
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+
+      @media (prefers-reduced-motion: no-preference) {
+        transition: height 0.3s ease-out, opacity 0.2s ease-out;
+      }
+    }
+
+    /* Timeline navigation - active nav title */
+    &.active {
+      pointer-events: none;
+      padding-left: var(--feather-grid-medium);
+
+      .menu-title {
+        font-size: var(--font-size-xxjumbo);
+        line-height: var(--line-height-xxjumbo);
+      }
+
+      .section-description {
+        margin: 0;
+        margin-top: var(--feather-grid-xsmall);
+        height: var(--nav-body-text-height);
+        opacity: 1;
+        overflow: visible;
+      }
+    }
+
+    /* Longer white lines */
+    &.active:after {
+      height: var(--timeline-element-border-height);
+      width: 35px;
+      top: 35px;
+    }
+
+    /* Shorter white lines */
+    &:after {
+      content: '';
+      display: block;
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+      position: absolute;
+      height: var(--timeline-element-border-height);
+      width: 20px;
+      left: -30px;
+      top: 12px;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      transition: all 0.3s ease-out;
+    }
+  }
+}

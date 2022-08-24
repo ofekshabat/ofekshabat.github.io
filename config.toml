@@ -3,14 +3,53 @@ languageCode = 'en-us'
 title = 'Ofek Bendit Shabat'
 enableEmoji = true
 theme = "cvsite"
+configDir = 'config/'
 [menu]
   [[menu.main]]
-    name = "Heyy 👋"
+    name = "Heyy :wave:"
     pre = "home"
     url = "#welcome"
     weight = 1
   [[menu.main]]
-    name = "About 💭"
+    name = "About :thought_balloon:"
     pre = "pen-tool"
     url = "#about"
+    weight = 2
+  [[menu.main]]
+    name = "Human skills :busts_in_silhouette:"
+    pre = "pen-tool"
+    url = "#human-skills"
+    weight = 3
+  [[menu.main]]
+    name = "Tech skillz :computer:"
+    pre = "pen-tool"
+    url = "#tech-skills"
+    weight = 4
+  [[menu.main]]
+    name = "Community Activities :sparkles:"
+    pre = "pen-tool"
+    url = "#community"
+    weight = 5
+  [[menu.main]]
+    name = "Hobbies :muscle:"
+    pre = "pen-tool"
+    url = "#hobbies"
+    weight = 6
+
+[params]
+  [[params.sections]]
+    id = "welcome"
+    title = "Heyy :wave:"
+    name = "Ofek Bendit Shabat"
+    avatar = "headshot2.jpg"
+    self.description = 'Leader<br \>Entrepreneur<br \>Cyber Researcher<br \><br \>:point_down:'
+    section.description = 'Thanks for visiting my site.<br \>To know me better just scroll down :point_down:'
+    weight = 1
+  [[params.sections]]
+    id = "about"
+    title = "About :thought_balloon:"
+    location = "Kiryat Motzkin & Tel Aviv :round_pushpin:"
+    heading = "Cyber Security Team Leader"
+    sub.heading = "I enjoy leading and helping people fulfill their potentional while pursuing their dreams."
+    section.description = "Just some words about me"
     weight = 2

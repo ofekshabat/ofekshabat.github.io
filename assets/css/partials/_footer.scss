@@ -1,0 +1,29 @@
+.footer {
+    padding: var(--feather-grid-mega) 0;
+}
+
+@media (min-width: 800px) {
+    .footer .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer .footer-cell {
+        flex: 1 1 25%;
+    }
+}
+
+a.foot-link {
+    display: block;
+    line-height: var(--feather-line-height-xlarge);
+}
+
+.footer-margin {
+    margin-bottom: calc(var(--feather-grid-mega) * 1.25);
+}
+
+@media (max-width: 800px) {
+    .footer-margin {
+        margin-bottom: var(--feather-grid-mega);
+    }
+}

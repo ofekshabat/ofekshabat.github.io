@@ -1,50 +1,27 @@
 {{ define "header" }}
 {{ end }}
 {{ define "main" }}
-    <!-- Site wrapper -->
-    <main>
-      {{/*  {{ block "banner" . }}{{ partial "banner.html" . }}{{ end }}  */}}
-      
-      <div class="YIR-wrapper">
-        <div class="YIR-container">
-          <div class="YIR-nav-wrapper" id="YIR-navbar">
-            <ul class="nav">
-              <li><a href="#welcome"><span class="YIR-nav-title">Heyy {{emojify ":wave:"}}</span></a></li>
-              <li><a href="#about"><span class="YIR-nav-title">About {{emojify ":thought_balloon:"}}</span></a></li>
-              <li><a href="#locations"><span class="YIR-nav-title">Human skills {{emojify ":busts_in_silhouette:"}} </span></a></li>
-              <li><a href="#heat"><span class="YIR-nav-title">Tech skillz {{emojify ":computer:"}}</span></a></li>
-              <li><a href="#light"><span class="YIR-nav-title">Community Activities {{emojify ":sparkles:"}}</span></a></li>
-              <li><a href="#love"><span class="YIR-nav-title">Hobbies {{emojify ":muscle:"}}</span></a></li>
-              <li><a href="#follow"><span class="YIR-nav-title">@OfekBendit</span></a></li>
+    <main>      
+      <div class="wrapper">
+        <div class="menu-container">
+          <div class="menu-wrapper" id="YIR-navbar">
+            <ul class="menu">
+              {{ range .Site.Params.sections }}
+                <li>
+                  <a href="#{{ .id  }}">
+                    <span class="menu-title">{{ emojify .title }}</span>
+                  </a>
+                  <p class="section-description">{{ emojify .section.description | safeHTML }}</p>
+                </li>
+              {{ end }}
+              <li><a href="#follow"><span class="menu-title">@OfekBendit</span></a></li>
             </ul>
           </div>
         </div>
-
-        <section id="welcome">
-          <div class="YIR-container-section">
-          {{ block "banner" . }}{{ partial "banner.html" . }}{{ end }}
-            <div class="inline-heading" id="YIR-header-inline-heading">
-              <p class="section-description">Thanks for visiting my site.<br \>To know me better just scroll down {{emojify ":point_down:" }}</p>
-            </div>
-          </div>
-        </section>
-        <section id="about"> <!-- top10-->
-          <div class="YIR-container-section">
-            <div class="YIR-header">
-            <div class="section-title">About {{emojify ":thought_balloon:"}}</div>
-
-              <h1 class="YIR-subheading" id="date-range">Kiryat Motzkin & Tel Aviv {{emojify ":round_pushpin:"}}</h1>
-              <h1 id="YIR-heading-text">Cyber Security Team Leader</h1>
-              <h1 class="YIR-subheading" id="type">I enjoy leading and helping people fulfill their potentional while pursuing their dreams.</h1>
-            </div>
-            <div class="inline-heading" id="YIR-header-inline-heading">
-              <p class="section-description">Just some words about me</p>
-            </div>
-          </div>
-        </section>
-      {{/*  <div class="content">
-        {{ block "content" . }}{{ end }}
-      </div>  */}}
+        {{ range .Site.Params.sections }}
+          {{ partial (printf "sections/%s.html" .id) . }}
+        {{ end }}
+        </div>
     </main>
 {{ end }}
 {{ define "content" }} {{ .Content }} {{ end }}
