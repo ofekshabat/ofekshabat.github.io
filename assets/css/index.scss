@@ -49,7 +49,7 @@ section {
   display: none;
   // font-size: var(--font-size-xxjumbo);
   line-height: var(--line-height-xxjumbo);
-  font-size: var(--font-size-mini-jumbo);
+  font-size: var(--font-size-jumbo);
   font-weight: var(--feather-font-weight-bold);
 
   @media (prefers-reduced-motion: no-preference) {
@@ -63,12 +63,8 @@ section {
 
 @import "partials/sections/welcome";
 @import "partials/sections/about";
+@import "partials/sections/tech";
 
-
-
-// section#locations {
-//   background: var(--tw-color-green-medium);
-// }
 
 // section#heat {
 //   background: var(--tw-color-orange-medium);
@@ -96,6 +92,10 @@ section {
   align-items: flex-end;
   padding: var(--feather-grid-large) 0;
 
+  .section-description {
+    display: none;
+  }
+  
   @media (max-width: 1224px) {
     & {
       margin: 0 var(--feather-grid-large);
@@ -111,13 +111,16 @@ section {
   }
 
   section {
-    height: fit-content;
+    // height: fit-content;
     padding: calc(var(--feather-grid-mega) * 1.5) 0;
   }
 
   .YIR-container-section {
     flex-direction: column;
     align-items: center;
+    .section-description {
+      display: block;
+    }
   }
 
   .YIR-header {

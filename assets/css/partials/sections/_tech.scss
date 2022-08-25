@@ -1,0 +1,48 @@
+section#tech {
+  background: var(--tw-color-red-deep);
+  min-height: 100vh;
+}
+
+#skills-title {
+  font-size: var(--font-size-YIR-heading-text);
+  font-weight: var(--feather-font-weight-bold);
+  align-self: end;
+
+  @media (max-width: 568px) {
+    font-size: var(--font-size-xjumbo);
+
+  }
+}
+
+#top-10-skills {
+  display: grid;
+  width: 100%;
+  grid-template-columns: min-content 1fr;
+  font-size: var(--feather-font-size-jumbo);
+  line-height: var(--line-height-xjumbo);
+  font-weight: var(--feather-font-weight-bold);
+  padding-bottom: var(--feather-grid-xxsmall);
+
+  .num {
+    align-self: center;
+    padding-right: var(--feather-grid-xsmall);
+  }
+
+  .skill {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    padding: 0px 10px;
+    box-sizing: content-box;
+    width: 80%;
+    background-color: black;
+    background-color: var(--tw-color-gray-1100);
+    margin: 0.2rem 0px;
+    border-radius: 5px;
+
+    @media (max-width: 1080px) {
+      line-height: var(--line-height-mini-jumbo);
+      font-size: 0.9rem;
+    }
+  }
+}

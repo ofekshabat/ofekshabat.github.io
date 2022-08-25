@@ -53,3 +53,9 @@ configDir = 'config/'
     sub.heading = "I enjoy leading and helping people fulfill their potentional while pursuing their dreams."
     section.description = "Just some words about me"
     weight = 2
+  [[params.sections]]
+    id = "tech"
+    title = "Tech skillz :computer:"
+    section.description = 'Loving technology since I remember myself...<br \>Professionalizing since 2015 in various topics.'
+    skills = [{ name = 'Web Application Security', color = 'black'}, { name = 'Ethical Hacking', color = 'black'}, { name = 'Full-stack development', color = 'black'}, { name = 'Low-Level development', color = 'black'}, { name = 'Reverse Engineering', color = 'black'}]
+    weight = 3
