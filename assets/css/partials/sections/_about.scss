@@ -1,5 +1,8 @@
 section#about {
     background: var(--my-color-orange);
     color: white;
-  min-height: 100vh;
+
+    @media (max-width: 1080px) {
+        min-height: 60vh;
+    }
 }

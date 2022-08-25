@@ -1,6 +1,8 @@
 section#tech {
   background: var(--tw-color-red-deep);
-  min-height: 100vh;
+  @media (max-width: 1080px) {
+    min-height: 60vh;
+  }
 }
 
 #skills-title {
