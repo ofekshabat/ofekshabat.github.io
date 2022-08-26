@@ -1,0 +1,33 @@
+section#soft {
+    background: var(--tw-color-blue-900);
+    background: var(--tw-color-blue-deep);
+    @media (max-width: 1080px) {
+        min-height: 60vh;
+    }
+
+    #soft-skills {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 100%;
+        font-size: var(--feather-font-size-jumbo);
+        line-height: var(--line-height-xjumbo);
+        font-weight: var(--feather-font-weight-bold);
+        padding-bottom: var(--feather-grid-xxsmall);
+
+        .skill {
+            text-align: center;
+            background-color: white;
+            color: black;
+            flex-grow: 2;
+            margin: 5px;
+            padding: 2px 10px;
+            border-radius: 5px;
+
+            @media (max-width: 1080px) {
+                line-height: var(--line-height-mini-jumbo);
+                font-size: 0.9rem;
+            }
+        }
+
+    }
+}

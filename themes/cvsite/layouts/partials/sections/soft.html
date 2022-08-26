@@ -1,0 +1,18 @@
+<section id="{{ .id }}"> <!-- top10-->
+  <div class="YIR-container-section">
+    <div class="section-title">{{ emojify .title }}</div>
+    <div class="section-description">{{ emojify .section.description }}</div>
+    <div class="YIR-header">
+      <div id="soft-skills">
+        {{ range $i, $skill := .skills }}
+          {{/*  <div class="num">{{ add $i 1 }}</div>  */}}
+          <div class="skill" >{{ $skill.name }}</div>
+        {{ end }}
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+

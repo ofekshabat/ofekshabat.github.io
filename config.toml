@@ -59,3 +59,9 @@ configDir = 'config/'
     section.description = 'Loving technology since I remember myself...<br \>Professionalizing since 2015 in various topics.'
     skills = [{ name = 'Web Application Security', color = 'black'}, { name = 'Ethical Hacking', color = 'black'}, { name = 'Full-stack development', color = 'black'}, { name = 'Low-Level development', color = 'black'}, { name = 'Reverse Engineering', color = 'black'}]
     weight = 3
+  [[params.sections]]
+    id = "soft"
+    title = "Personal skills :innocent:"
+    section.description = 'Take a look on some of my personal traits and other soft skills, remember there are no greater skills than our soft skills.'
+    skills = [{ name = 'Leadership'}, { name = 'Problem Solving' }, { name = 'Curiosity'}, { name = 'Creativity'}, { name = 'Assertiveness'}, { name = 'Autodidaction'}, { name = 'In-Person communication'}, { name = 'Receiving & Giving criticisim'}]
+    weight = 4
