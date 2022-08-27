@@ -1,6 +1,5 @@
 section#soft {
-    background: var(--tw-color-blue-900);
-    background: var(--tw-color-blue-deep);
+    background: linear-gradient(180deg, #113d55 0%, #144a66 100%);
     @media (max-width: 1080px) {
         min-height: 60vh;
     }

@@ -1,5 +1,6 @@
 section#tech {
-  background: var(--tw-color-red-deep);
+  background: linear-gradient(180deg, rgba(11,40,56,1) 0%, #113d55 100%);
+
   @media (max-width: 1080px) {
     min-height: 60vh;
   }

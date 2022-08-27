@@ -1,6 +1,6 @@
 #banner {
 
-    background-color: black;
+    background-color: var(--background-color);;
     color: white;
     display: flex;
     flex-direction: column;
@@ -36,13 +36,13 @@
         &:before {
             top: 0;
             left: 0;
-            background-image: linear-gradient(45deg, var(--my-color-pink), var(--my-color-orange));
+            background-image: linear-gradient(45deg, #e89c31, #dba858);
         }
 
         &:after {
             bottom: 0;
             right: 0;
-            background-image: linear-gradient(45deg, var(--my-color-orange), var(--my-color-pink));
+            background-image: linear-gradient(45deg, #dba858, #e89c31);
         }
     }
 
@@ -73,7 +73,7 @@
         transition-delay: 1.25s;
         content: "";
 
-        background-color: black;
+        background-color: var(--background-color);;
         color: white;
 
         display: block;

@@ -134,7 +134,7 @@ section {
   }
 
   nav {
-    background-color: black;
+    background-color: var(--background-color);
   }
 }
 
@@ -257,5 +257,18 @@ h1#YIR-heading-text,
     font-size: var(--feather-font-size-jumbo);
     line-height: var(--feather-line-height-jumbo);
     padding-left: var(--feather-grid-micro);
+  }
+}
+
+.separator {
+  background: linear-gradient(45deg, #dba858, #e89c31);
+  // background: #8c0e0f;
+  height: 0.5px;
+  margin: 0;
+  padding: 0;
+  display: none;
+  border: 0px;
+  @media (max-width: 1080px) {
+    display: block;
   }
 }
