@@ -20,7 +20,7 @@
         </div>
         {{ range .Site.Params.sections }}
           {{ partial (printf "sections/%s.html" .id) . }}
-          {{ partial "separator.html" . }}
+          {{/*  {{ partial "separator.html" . }}  */}}
         {{ end }}
         </div>
     </main>

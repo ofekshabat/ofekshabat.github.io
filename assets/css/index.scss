@@ -59,6 +59,19 @@ section {
   @media (max-width: 1080px) {
     display: block;
   }
+  // span {
+  //   position: relative;
+  //   padding-bottom: 0.15em;
+  // }
+  // span::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 100%;
+  //   width: 100%;
+  //   left: 0;
+  //   height: 2px;
+  //   border-radius: 2px
+  // }
 }
 
 @import "partials/sections/welcome";
@@ -96,7 +109,7 @@ section {
   .section-description {
     display: none;
   }
-  
+
   @media (max-width: 1224px) {
     & {
       margin: 0 var(--feather-grid-large);
